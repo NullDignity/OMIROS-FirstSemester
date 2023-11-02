@@ -22,11 +22,8 @@ main() {
 	scanf("%d", &original_number);
 	
 	int hundreds = original_number / 100;
-	//printf("%d", hundreds);
 	int tens = ((original_number - hundreds * 100) / 10);
-	//printf("%d", tens);
 	int ones = (original_number - (hundreds * 100) - (tens * 10));
-	//printf("%d", ones);
 	
 	int sum = hundreds + tens + ones;
 	printf("The sum of the individual numbers is: %d\n", sum);
