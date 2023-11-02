@@ -28,9 +28,7 @@ main() {
 	int sum = hundreds + tens + ones;
 	printf("The sum of the individual numbers is: %d\n", sum);
 	
-	int temp;
-	
-	temp = ones;
+	int temp = ones;
 	ones = hundreds;
 	hundreds = temp;
 	
