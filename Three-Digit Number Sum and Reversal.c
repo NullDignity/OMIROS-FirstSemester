@@ -32,7 +32,7 @@ main() {
 	ones = hundreds;
 	hundreds = temp;
 	
-	int reversed_number = ones * 1 + tens * 10 + hundreds * 100;
+	int reversed_number = hundreds * 100 + tens * 10 + ones;
 	printf("The number in reverse is: %d\n", reversed_number);
 	
 	system("PAUSE");
