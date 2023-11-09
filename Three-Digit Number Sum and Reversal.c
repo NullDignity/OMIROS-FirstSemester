@@ -22,17 +22,13 @@ int main() {
 	scanf("%d", &original_number);
 	
 	int hundreds = original_number / 100;
-	int tens = ((original_number - hundreds * 100) / 10);
-	int ones = (original_number - (hundreds * 100) - (tens * 10));
+	int tens = original_number % 100 / 10;
+	int ones = original_number % 100 % 10;
 	
 	int sum = hundreds + tens + ones;
 	printf("The sum of the individual numbers is: %d\n", sum);
 	
-	int temp = ones;
-	ones = hundreds;
-	hundreds = temp;
-	
-	int reversed_number = hundreds * 100 + tens * 10 + ones;
+	int reversed_number = ones * 100 + tens * 10 + hundreds;
 	printf("The number in reverse is: %d\n", reversed_number);
 	
 	system("PAUSE");
