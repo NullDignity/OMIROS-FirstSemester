@@ -14,7 +14,7 @@ Assume that the user *will* provide a three-digit number.
 #include <stdio.h>
 #include <stdlib.h>
 
-main() {
+int main() {
 	
 	int original_number;
 	
