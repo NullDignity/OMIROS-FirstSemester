@@ -1,6 +1,6 @@
-# IEKFirstHalf
-Οι ασκήσεις στο ΙΕΚ Όμηρος για το Πρώτο (1ο) Εξάμηνο.
-Το παρακάτω είναι το πρόγραμμα και η χρονολογία των ασκήσεων. Η ημερομηνία είναι πότε ζητήθηκαν.
+# OMIROS First Semester
+The following are the exercises for the first semester of IEK OMIROS, all written in C.
+Below is the exercise name, as well as the date to which it was completed.
 
 <pre>
 FirstApplication - 26/10/2023
