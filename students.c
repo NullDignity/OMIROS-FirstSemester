@@ -66,7 +66,7 @@ int main(void) {
 			
 		getchar();
 		
-		system("CLEAR");
+		system("cls");
 				
 	}
 	
@@ -77,9 +77,16 @@ int main(void) {
 		printf("STUDENT: %s %s\n", student_given_names[x], student_family_names[x]);
 		printf("Grade in Theoretical Exam: %.1f\n", theory_grades[x]);
 		printf("Grade in Applied Knowledge Exam: %.1f\n", applied_grades[x]);
-		printf("GPA: %.1f\n\n", total_grade[x]);
+		printf("GPA: %.1f\n", total_grade[x]);
 		
 	}
+	
+	printf("\n====================================================================\n");
+	printf("Class GPA: %.1f\n", class_avg);
+	printf("The Highest GPA in this class is %.1f, and the following students have obtained it:\n", max);
+	for (x = 0; x < STUDENTS; x++)
+		if (total_grade[x] == max)
+			printf("%s %s\n", student_given_names[x], student_family_names[x]);
 	
 	system("PAUSE > nul");
 	return 0;
