@@ -16,12 +16,12 @@ bool duplicateCheck(char list[][15], int new_suite) {
 int main(void) {
 	
 	char room_names[ROOM_AMOUNT][15], check[15];
-	int room_revenue[ROOM_AMOUNT][12], x, y, revenue;
-	float avg_rev[ROOM_AMOUNT], min_avg;
+	int x, y;
+	float avg_rev[ROOM_AMOUNT], min_avg, revenue, room_revenue[ROOM_AMOUNT][12];
 	
 	for (x; x < ROOM_AMOUNT; x++) {
 		
-		system("CLEAR");
+		system("cls");
 		
 		printf("Please enter Room %d's name: ", x+1);
 		fgets(room_names[x], 15, stdin);
@@ -30,21 +30,21 @@ int main(void) {
 			fgets(room_names[x], 15, stdin);
 		}
 		
-		system("CLEAR");
+		system("cls");
 		
 		for (y = 0; y < 12; y++) {
 			printf("Please enter the revenue of Room %d for Month %d: ", x+1, y+1);
-			scanf("%d", &revenue);
+			scanf("%f", &revenue);
 			while (revenue < 0) {
 				printf("You entered a negative value for revenue. Please try again: ");
-				scanf("%d", &revenue);
+				scanf("%f", &revenue);
 			}
 			room_revenue[x][y] = revenue;
 			getchar();
 		}
 	}
 	
-	system("CLEAR");
+	system("cls");
 	
 	for (x = 0; x < ROOM_AMOUNT; x++) {
 		
